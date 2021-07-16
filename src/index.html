@@ -21,220 +21,224 @@
       <img src="./assets/logo.svg" alt="logo" />
     </header>
 
-    <main
-      class="bg-white rounded-t-3xl flex direction-column py-10 px-8 grid gap-8"
-    >
-      <div class="flex flex-col w-full">
-        <label for="bill" class="font-bold text-darkGrayishCyan text-base"
-          >Bill</label
-        >
-        <div
-          class="
-            bg-veryLightGrayishCyan
-            w-full
-            flex
-            items-center
-            justify-between
-            mt-2
-            h-12
-            px-4
-            rounded-md
-            border-transparent
-            focus-within:border-strongCyan
-            border-2
-            mb-9
-          "
-        >
-          <img src="./assets/icon-dollar.svg" alt="money" />
-          <input
-            type="number"
-            id="bill"
-            name="bill"
-            class="
-              bg-transparent
-              h-full
-              w-full
-              ml-4
-              outline-none
-              text-right text-veryDarkCyan
-              font-bold
-              text-2xl
-            "
-          />
-        </div>
-
-        <strong class="font-bold text-darkGrayishCyan text-bas"
-          >Select a tip %</strong
-        >
-        <ul class="grid grid-cols-2 gap-4 mt-4 mb-9">
-          <li
-            class="
-              bg-veryDarkCyan
-              hover:bg-strongCyan
-              rounded-md
-              cursor-pointer
-              h-12
-              flex
-              items-center
-              justify-center
-            "
+    <main class="bg-white rounded-t-3xl flex direction-column py-10 px-8">
+      <form name="spliterForm" class="grid gap-8">
+        <div class="flex flex-col w-full">
+          <label for="bill" class="font-bold text-darkGrayishCyan text-base"
+            >Bill</label
           >
-            <span class="text-white font-bold text-2xl">5%</span>
-          </li>
-          <li
-            class="
-              bg-veryDarkCyan
-              hover:bg-strongCyan
-              rounded-md
-              cursor-pointer
-              h-12
-              flex
-              items-center
-              justify-center
-            "
-          >
-            <span class="text-white font-bold text-2xl">10%</span>
-          </li>
-          <li
-            class="
-              bg-veryDarkCyan
-              hover:bg-strongCyan
-              rounded-md
-              cursor-pointer
-              h-12
-              flex
-              items-center
-              justify-center
-            "
-          >
-            <span class="text-white font-bold text-2xl">15%</span>
-          </li>
-          <li
-            class="
-              bg-veryDarkCyan
-              hover:bg-strongCyan
-              rounded-md
-              cursor-pointer
-              h-12
-              flex
-              items-center
-              justify-center
-            "
-          >
-            <span class="text-white font-bold text-2xl">25%</span>
-          </li>
-          <li
-            class="
-              bg-veryDarkCyan
-              hover:bg-strongCyan
-              cursor-pointer
-              h-12
-              flex
-              items-center
-              justify-center
-              rounded-md
-            "
-          >
-            <span class="text-white font-bold text-2xl">50%</span>
-          </li>
-          <li
+          <div
             class="
               bg-veryLightGrayishCyan
-              rounded-md
+              w-full
+              flex
+              items-center
+              justify-between
+              mt-2
               h-12
-              border-2 border-transparent
+              px-4
+              rounded-md
+              border-transparent
               focus-within:border-strongCyan
+              border-2
+              mb-9
             "
           >
+            <img src="./assets/icon-dollar.svg" alt="money" />
             <input
               type="number"
+              id="bill"
+              name="bill"
               class="
-                text-veryDarkCyan
+                bg-transparent
+                h-full
+                w-full
+                ml-4
+                outline-none
+                text-right text-veryDarkCyan
                 font-bold
                 text-2xl
-                w-full
-                h-full
-                bg-transparent
-                text-right
-                pr-4
-                outline-none
               "
-              name="customTip"
-              id="custom-tip"
-              placeholder="Custom"
             />
-          </li>
-        </ul>
+          </div>
 
-        <label
-          for="number-of-people"
-          class="font-bold text-darkGrayishCyan text-base"
-          >Number of people</label
-        >
-        <div
-          class="
-            bg-veryLightGrayishCyan
-            w-full
-            flex
-            items-center
-            justify-between
-            mt-2
-            h-12
-            px-4
-            rounded-md
-            border-transparent
-            focus-within:border-strongCyan
-            border-2
-          "
-        >
-          <img src="./assets/icon-person.svg" alt="people" />
-          <input
-            type="number"
-            id="number-of-people"
-            name="numberOfPeople"
+          <strong class="font-bold text-darkGrayishCyan text-bas"
+            >Select a tip %</strong
+          >
+          <ul class="grid grid-cols-2 gap-4 mt-4 mb-9">
+            <li
+              class="
+                bg-veryDarkCyan
+                hover:bg-strongCyan
+                rounded-md
+                cursor-pointer
+                h-12
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <span class="text-white font-bold text-2xl">5%</span>
+            </li>
+            <li
+              class="
+                bg-veryDarkCyan
+                hover:bg-strongCyan
+                rounded-md
+                cursor-pointer
+                h-12
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <span class="text-white font-bold text-2xl">10%</span>
+            </li>
+            <li
+              class="
+                bg-veryDarkCyan
+                hover:bg-strongCyan
+                rounded-md
+                cursor-pointer
+                h-12
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <span class="text-white font-bold text-2xl">15%</span>
+            </li>
+            <li
+              class="
+                bg-veryDarkCyan
+                hover:bg-strongCyan
+                rounded-md
+                cursor-pointer
+                h-12
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <span class="text-white font-bold text-2xl">25%</span>
+            </li>
+            <li
+              class="
+                bg-veryDarkCyan
+                hover:bg-strongCyan
+                cursor-pointer
+                h-12
+                flex
+                items-center
+                justify-center
+                rounded-md
+              "
+            >
+              <span class="text-white font-bold text-2xl">50%</span>
+            </li>
+            <li
+              class="
+                bg-veryLightGrayishCyan
+                rounded-md
+                h-12
+                border-2 border-transparent
+                focus-within:border-strongCyan
+              "
+            >
+              <input
+                type="number"
+                class="
+                  text-veryDarkCyan
+                  font-bold
+                  text-2xl
+                  w-full
+                  h-full
+                  bg-transparent
+                  text-right
+                  pr-4
+                  outline-none
+                "
+                name="customTip"
+                id="custom-tip"
+                placeholder="Custom"
+              />
+            </li>
+          </ul>
+
+          <label
+            for="number-of-people"
+            class="font-bold text-darkGrayishCyan text-base"
+            >Number of people</label
+          >
+          <div
             class="
-              bg-transparent
-              h-full
+              bg-veryLightGrayishCyan
               w-full
-              ml-4
-              outline-none
-              text-right text-veryDarkCyan
-              font-bold
-              text-2xl
+              flex
+              items-center
+              justify-between
+              mt-2
+              h-12
+              px-4
+              rounded-md
+              border-transparent
+              focus-within:border-strongCyan
+              border-2
             "
-          />
+          >
+            <img src="./assets/icon-person.svg" alt="people" />
+            <input
+              type="number"
+              id="number-of-people"
+              name="people"
+              class="
+                bg-transparent
+                h-full
+                w-full
+                ml-4
+                outline-none
+                text-right text-veryDarkCyan
+                font-bold
+                text-2xl
+              "
+            />
+          </div>
         </div>
-      </div>
-      <div class="bg-veryDarkCyan pb-6 px-6 pt-11 rounded-md">
-        <div class="flex justify-between items-center">
-          <p class="text-white font-bold">
-            Tip Amount <br />
-            <span class="block text-sm text-grayishCyan">/ person</span>
-          </p>
-          <strong class="text-strongCyan text-3xl">$0.00</strong>
+        <div class="bg-veryDarkCyan pb-6 px-6 pt-11 rounded-md">
+          <div class="flex justify-between items-center">
+            <p class="text-white font-bold">
+              Tip Amount <br />
+              <span class="block text-sm text-grayishCyan">/ person</span>
+            </p>
+            <strong id="tip-amount-displayer" class="text-strongCyan text-3xl"
+              >$0.00</strong
+            >
+          </div>
+          <div class="flex justify-between items-center mt-7">
+            <p class="text-white font-bold">
+              Total <br />
+              <span class="block text-sm text-grayishCyan">/ person</span>
+            </p>
+            <strong id="total-amount-displayer" class="text-strongCyan text-3xl"
+              >$0.00</strong
+            >
+          </div>
+          <button
+            type="submit"
+            class="
+              w-full
+              mt-9
+              py-2
+              bg-strongCyan
+              font-bold
+              rounded-md
+              text-veryDarkCyan text-lg
+            "
+          >
+            RESET
+          </button>
         </div>
-        <div class="flex justify-between items-center mt-7">
-          <p class="text-white font-bold">
-            Total <br />
-            <span class="block text-sm text-grayishCyan">/ person</span>
-          </p>
-          <strong class="text-strongCyan text-3xl">$0.00</strong>
-        </div>
-        <button
-          type="submit"
-          class="
-            w-full
-            mt-9
-            py-2
-            bg-strongCyan
-            font-bold
-            rounded-md
-            text-veryDarkCyan text-lg
-          "
-        >
-          RESET
-        </button>
-      </div>
+      </form>
     </main>
     <script type="module" src="./javascript/app.js"></script>
   </body>
