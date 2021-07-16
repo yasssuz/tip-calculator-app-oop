@@ -21,7 +21,9 @@
       <img src="./assets/logo.svg" alt="logo" />
     </header>
 
-    <main class="bg-white rounded-t-3xl flex direction-column py-10 px-8">
+    <main
+      class="bg-white rounded-t-3xl flex direction-column py-10 px-8 grid gap-8"
+    >
       <div class="flex flex-col w-full">
         <label for="bill" class="font-bold text-darkGrayishCyan text-base"
           >Bill</label
@@ -202,6 +204,36 @@
             "
           />
         </div>
+      </div>
+      <div class="bg-veryDarkCyan pb-6 px-6 pt-11 rounded-md">
+        <div class="flex justify-between items-center">
+          <p class="text-white font-bold">
+            Tip Amount <br />
+            <span class="block text-sm text-grayishCyan">/ person</span>
+          </p>
+          <strong class="text-strongCyan text-3xl">$0.00</strong>
+        </div>
+        <div class="flex justify-between items-center mt-7">
+          <p class="text-white font-bold">
+            Total <br />
+            <span class="block text-sm text-grayishCyan">/ person</span>
+          </p>
+          <strong class="text-strongCyan text-3xl">$0.00</strong>
+        </div>
+        <button
+          type="submit"
+          class="
+            w-full
+            mt-9
+            py-2
+            bg-strongCyan
+            font-bold
+            rounded-md
+            text-veryDarkCyan text-lg
+          "
+        >
+          RESET
+        </button>
       </div>
     </main>
     <script type="module" src="./javascript/app.js"></script>
