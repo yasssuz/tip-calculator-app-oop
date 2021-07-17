@@ -1,5 +1,6 @@
 import "../styles/index.css";
 import Splitter from "./handleCalc";
+import TipSelector from "./handleTip";
 
 const form = document.forms.spliterForm;
 
@@ -19,3 +20,7 @@ form.addEventListener("submit", e => {
     console.log(error);
   }
 });
+
+document
+  .querySelectorAll("#tips-list li")
+  .forEach(tip => tip.addEventListener("click", TipSelector.selectTip));
