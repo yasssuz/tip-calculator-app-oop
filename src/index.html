@@ -24,9 +24,15 @@
     <main class="bg-white rounded-t-3xl flex direction-column py-10 px-8">
       <form name="spliterForm" class="grid gap-8">
         <div class="flex flex-col w-full">
-          <label for="bill" class="font-bold text-darkGrayishCyan text-base"
-            >Bill</label
-          >
+          <div class="flex items-center justify-between">
+            <label for="bill" class="font-bold text-darkGrayishCyan text-base"
+              >Bill</label
+            >
+            <small
+              id="bill-error-log"
+              class="text-red text-base font-bold"
+            ></small>
+          </div>
           <div
             class="
               bg-veryLightGrayishCyan
@@ -49,6 +55,7 @@
               type="number"
               id="bill"
               name="bill"
+              value="0"
               class="
                 bg-transparent
                 h-full
@@ -65,7 +72,7 @@
           <strong class="font-bold text-darkGrayishCyan text-bas"
             >Select a tip %</strong
           >
-          <ul class="grid grid-cols-2 gap-4 mt-4 mb-9">
+          <ul id="tips-list" class="grid grid-cols-2 gap-4 mt-4 mb-9">
             <li
               class="
                 bg-veryDarkCyan
@@ -78,7 +85,9 @@
                 justify-center
               "
             >
-              <span class="text-white font-bold text-2xl">5%</span>
+              <span class="text-white font-bold text-2xl pointer-events-none"
+                >5%</span
+              >
             </li>
             <li
               class="
@@ -92,7 +101,9 @@
                 justify-center
               "
             >
-              <span class="text-white font-bold text-2xl">10%</span>
+              <span class="text-white font-bold text-2xl pointer-events-none"
+                >10%</span
+              >
             </li>
             <li
               class="
@@ -106,7 +117,9 @@
                 justify-center
               "
             >
-              <span class="text-white font-bold text-2xl">15%</span>
+              <span class="text-white font-bold text-2xl pointer-events-none"
+                >15%</span
+              >
             </li>
             <li
               class="
@@ -120,7 +133,9 @@
                 justify-center
               "
             >
-              <span class="text-white font-bold text-2xl">25%</span>
+              <span class="text-white font-bold text-2xl pointer-events-none"
+                >25%</span
+              >
             </li>
             <li
               class="
@@ -134,9 +149,12 @@
                 rounded-md
               "
             >
-              <span class="text-white font-bold text-2xl">50%</span>
+              <span class="text-white font-bold text-2xl pointer-events-none"
+                >50%</span
+              >
             </li>
             <li
+              id="li-with-input"
               class="
                 bg-veryLightGrayishCyan
                 rounded-md
@@ -157,19 +175,27 @@
                   text-right
                   pr-4
                   outline-none
+                  pointer-events-none
                 "
                 name="customTip"
                 id="custom-tip"
                 placeholder="Custom"
+                min="1"
               />
             </li>
           </ul>
 
-          <label
-            for="number-of-people"
-            class="font-bold text-darkGrayishCyan text-base"
-            >Number of people</label
-          >
+          <div class="flex items-center justify-between">
+            <label
+              for="number-of-people"
+              class="font-bold text-darkGrayishCyan text-base"
+              >Number of people</label
+            >
+            <small
+              id="people-error-log"
+              class="text-red text-base font-bold"
+            ></small>
+          </div>
           <div
             class="
               bg-veryLightGrayishCyan
@@ -191,6 +217,7 @@
               type="number"
               id="number-of-people"
               name="people"
+              value="0"
               class="
                 bg-transparent
                 h-full
