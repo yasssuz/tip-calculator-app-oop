@@ -1,3 +1,16 @@
 body {
   font-family: "Space Mono", sans-serif;
 }
+
+#tips-list li.selected-tip {
+  background: hsl(172, 67%, 45%);
+}
+
+#tips-list li.selected-tip span {
+  color: hsl(183, 100%, 15%);
+}
+
+#tips-list #li-with-input.selected-tip {
+  border: 2px solid hsl(172, 67%, 45%);
+  background: hsl(203, 50%, 97%);
+}
