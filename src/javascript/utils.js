@@ -1,9 +1,9 @@
 export default class Utils {
-  static getQuery(q) {
+  static getQ(q) {
     return document.querySelector(q);
   }
 
-  static getAllQueries(q) {
+  static getAllQ(q) {
     return document.querySelectorAll(q);
   }
 }

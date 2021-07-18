@@ -7,22 +7,20 @@ export default class TipSelector extends Utils {
   }
 
   validateTip() {
-    const errLog = Utils.getQuery("#tip-error-log");
+    const errLog = Utils.getQ("#tip-error-log");
 
     if (Number.isNaN(this.tip)) {
       errLog.textContent = "select a tip";
       throw new Error("select a tip first");
     }
 
-    errLog.textContent = "";
+    errLog.textContent = null;
   }
 
   static clearTips() {
-    const tips = Utils.getAllQueries("#tips-list li");
+    const tips = Utils.getAllQ("#tips-list li");
 
-    tips.forEach(tip => {
-      tip.classList.remove("selected-tip");
-    });
+    tips.forEach(tip => tip.classList.remove("selected-tip"));
   }
 
   static selectTip(e) {
@@ -39,7 +37,7 @@ export default class TipSelector extends Utils {
   }
 
   static getTipAmount() {
-    const tips = Utils.getAllQueries("#tips-list li");
+    const tips = Utils.getAllQ("#tips-list li");
     let tipAmount;
 
     tips.forEach(tip => {

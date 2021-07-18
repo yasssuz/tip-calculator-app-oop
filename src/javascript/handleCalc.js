@@ -9,9 +9,9 @@ export default class Splitter extends Utils {
   }
 
   handleValidation() {
-    const billElement = Utils.getQuery("#bill-error-log");
+    const billElement = Utils.getQ("#bill-error-log");
     const billParent = billElement.parentElement.nextElementSibling;
-    const peopleElement = Utils.getQuery("#people-error-log");
+    const peopleElement = Utils.getQ("#people-error-log");
     const peopleParent = peopleElement.parentElement.nextElementSibling;
     let error = false;
 
@@ -55,14 +55,14 @@ export default class Splitter extends Utils {
   }
 
   static displayTip(tip) {
-    const element = Utils.getQuery("#tip-amount-displayer");
+    const element = Utils.getQ("#tip-amount-displayer");
 
-    element.innerText = `$${tip}`;
+    element.textContent = `$${tip}`;
   }
 
   static displayTotal(total) {
-    const element = Utils.getQuery("#total-amount-displayer");
+    const element = Utils.getQ("#total-amount-displayer");
 
-    element.innerText = `$${total}`;
+    element.textContent = `$${total}`;
   }
 }
