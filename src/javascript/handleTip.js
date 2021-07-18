@@ -20,13 +20,21 @@ export default class TipSelector extends Utils {
   static clearTips() {
     const tips = Utils.getAllQueries("#tips-list li");
 
-    tips.forEach(tip => tip.classList.remove("selected-tip"));
+    tips.forEach(tip => {
+      tip.classList.remove("selected-tip");
+    });
   }
 
   static selectTip(e) {
     const tip = e.target;
 
     TipSelector.clearTips();
+
+    if (tip.id === "custom-tip") {
+      tip.parentElement.classList.add("selected-tip");
+      return;
+    }
+
     tip.classList.add("selected-tip");
   }
 
@@ -35,6 +43,14 @@ export default class TipSelector extends Utils {
     let tipAmount;
 
     tips.forEach(tip => {
+      if (
+        tip.classList.contains("selected-tip") &&
+        tip.id === "li-with-input"
+      ) {
+        tipAmount = tip.children[0].value;
+        return;
+      }
+
       if (tip.classList.contains("selected-tip")) {
         tipAmount = tip.children[0].textContent;
         tipAmount = tipAmount.replace(/%/, "");
