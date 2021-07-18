@@ -2,6 +2,12 @@ body {
   font-family: "Space Mono", sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    margin-top: -580px !important;
+  }
+}
+
 #tips-list li.selected-tip {
   background: hsl(172, 67%, 45%);
 }

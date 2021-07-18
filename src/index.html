@@ -16,13 +16,42 @@
     <link rel="stylesheet" href="./styles/core/tailwind.config.css" />
   </head>
 
-  <body class="bg-lightGrayishCyan">
-    <header class="w-full flex justify-center mt-12 mb-10">
+  <body
+    class="
+      bg-lightGrayishCyan
+      flex flex-col
+      h-screen
+      md:items-center md:justify-center
+    "
+  >
+    <header
+      class="
+        w-full
+        flex
+        justify-center
+        mt-12
+        mb-10
+        md:mb-20 md:absolute md:mb-20
+      "
+    >
       <img src="./assets/logo.svg" alt="logo" />
     </header>
 
-    <main class="bg-white rounded-t-3xl flex direction-column py-10 px-8">
-      <form name="spliterForm" class="grid gap-8">
+    <main
+      class="
+        bg-white
+        rounded-t-3xl
+        md:rounded-b-3xl
+        flex
+        direction-column
+        py-10
+        px-8
+        max-w-4xl
+        mx-auto
+        md:mt-20
+      "
+    >
+      <form name="spliterForm" class="grid gap-8 w-full md:grid-cols-2">
         <div class="flex flex-col w-full">
           <div class="flex items-center justify-between">
             <label for="bill" class="font-bold text-darkGrayishCyan text-base"
@@ -237,22 +266,36 @@
             />
           </div>
         </div>
-        <div class="bg-veryDarkCyan pb-6 px-6 pt-11 rounded-md">
+        <div
+          class="
+            bg-veryDarkCyan
+            pb-6
+            px-6
+            pt-11
+            rounded-md
+            md:rounded-2xl md:pb-10 md:pt-14 md:px-10
+            flex flex-col
+          "
+        >
           <div class="flex justify-between items-center">
             <p class="text-white font-bold">
               Tip Amount <br />
               <span class="block text-sm text-grayishCyan">/ person</span>
             </p>
-            <strong id="tip-amount-displayer" class="text-strongCyan text-3xl"
+            <strong
+              id="tip-amount-displayer"
+              class="text-strongCyan text-3xl md:text-4xl"
               >$0.00</strong
             >
           </div>
-          <div class="flex justify-between items-center mt-7">
+          <div class="flex justify-between items-center mt-7 md:mt-12">
             <p class="text-white font-bold">
               Total <br />
               <span class="block text-sm text-grayishCyan">/ person</span>
             </p>
-            <strong id="total-amount-displayer" class="text-strongCyan text-3xl"
+            <strong
+              id="total-amount-displayer"
+              class="text-strongCyan text-3xl md:text-4xl"
               >$0.00</strong
             >
           </div>
@@ -266,6 +309,7 @@
               font-bold
               rounded-md
               text-veryDarkCyan text-lg
+              md:mt-auto
             "
           >
             RESET
