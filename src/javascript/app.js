@@ -8,17 +8,15 @@ form.addEventListener("submit", e => {
   e.preventDefault();
 
   const bill = form.bill.value;
-  const tipAmount = 5;
+  const tipAmount = TipSelector.getTipAmount();
   const people = form.people.value;
-  const calc = new Splitter(bill, tipAmount, people);
+  const actionObj = new Splitter(bill, tipAmount, people);
+  const tipObj = new TipSelector(tipAmount);
 
-  try {
-    calc.handleValidation();
-    Splitter.displayTip(Splitter.formatValue(calc.handleTip()));
-    Splitter.displayTotal(Splitter.formatValue(calc.handleTotal()));
-  } catch (error) {
-    console.log(error);
-  }
+  actionObj.handleValidation();
+  tipObj.validateTip();
+  Splitter.displayTip(Splitter.formatValue(actionObj.handleTip()));
+  Splitter.displayTotal(Splitter.formatValue(actionObj.handleTotal()));
 });
 
 document
