@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/mobile-first-with-tailwindcss-html-objectedoriented-js-and-vite-xd-QIQq_Y8ru](https://www.frontendmentor.io/solutions/mobile-first-with-tailwindcss-html-objectedoriented-js-and-vite-xd-QIQq_Y8ru)
 - Live Site URL: [https://tip-calculator-app-oop.vercel.app/](https://tip-calculator-app-oop.vercel.app/)
 
 ## My process
@@ -49,7 +49,8 @@ Users should be able to:
 
 ### Continued development
 
-I learned a few new keywords in javascript, but nothing really life-changing. But building this project using oop principles was actually kinda cool, I learned about static methods, the `this` keyword, the OO mindset... very cool experience (but i still prefer the functional paradigm :D). When I find the opportunity to use OO principles again, i'm definitly gonna use them.
+I learned a few new keywords in javascript, but nothing really life-changing. But building this project using oop principles was actually kinda cool, I learned about static methods, the `this` keyword, the OO mindset... a very cool experience (but I still prefer the functional paradigm :D). When I find the opportunity to use OO principles again, I'm definitely gonna use them.
+
 
 ## Author
 
