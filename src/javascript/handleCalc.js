@@ -41,16 +41,15 @@ export default class Splitter extends Utils {
   handleTip() {
     const percentage = (this.bill / 100) * this.tipAmount;
 
-    return Splitter.formatValue(percentage / this.people);
+    return percentage / this.people;
   }
 
   handleTotal() {
-    return Splitter.formatValue(this.handleTip() * this.people + this.bill);
+    return this.bill / this.people + this.handleTip();
   }
 
   static formatValue(value) {
     return value.toLocaleString("en-US", {
-      minimunFractionDigits: 2,
       maximumFractionDigits: 2,
     });
   }
